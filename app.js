@@ -28,7 +28,7 @@ const CATEGORIES = {
     'ETF Global (VWCE)',
     'Acțiuni individuale',
     'Fond de urgenta',
-    'Fond pentru Beach, Please!',
+    'Fond B, P!',
     'Altele (investiție)',
   ],
 };
