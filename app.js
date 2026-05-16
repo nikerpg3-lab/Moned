@@ -27,8 +27,8 @@ const CATEGORIES = {
     'ETF S&P 500 (VUAA/CSPX)',
     'ETF Global (VWCE)',
     'Acțiuni individuale',
-    'Crypto',
-    'Fond de pensii privat',
+    'Fond de urgenta',
+    'Fond Beach, Please!',
     'Altele (investiție)',
   ],
 };
