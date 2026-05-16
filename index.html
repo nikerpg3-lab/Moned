@@ -8,20 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:        #0f0f11;
-      --surface:   #17171a;
-      --border:    #2a2a30;
-      --muted:     #52525e;
-      --text:      #e8e8ed;
-      --subtext:   #8e8e9e;
-      --green:     #22c55e;
-      --green-dim: #16a34a22;
-      --red:       #f43f5e;
-      --red-dim:   #f43f5e22;
-      --accent:    #818cf8;
-      --blue:      #38bdf8;   /* investiții */
-      --blue-dim:  #38bdf818;
-    }
+  --bg:        #0d1a12;
+  --surface:   #132019;
+  --border:    #1e3828;
+  --muted:     #4a6b55;
+  --text:      #e0ede4;
+  --subtext:   #7aab8a;
+  --green:     #00ff88;   /* verde neon — venituri ies în evidență */
+  --green-dim: #00ff8818;
+  --red:       #ff4466;   /* roșu vibrant — cheltuieli clare */
+  --red-dim:   #ff446618;
+  --accent:    #00cc6a;
+}
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -230,26 +228,38 @@
     }
 
     /* Buton submit */
-    .btn-add {
-      width: 100%;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 10px;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      cursor: pointer;
-      transition: opacity 0.15s, transform 0.1s;
-    }
-    .btn-add:hover  { opacity: 0.85; }
-    .btn-add:active { transform: scale(0.98); }
-    .btn-add.income-mode     { border: 2px solid var(--green); color: var(--green); box-shadow: 0 0 12px #00ff8833; }
-    .btn-add.income-mode:hover     { background: var(--green-dim); }
-    .btn-add.expense-mode    { border: 2px solid var(--red);   color: var(--red);   box-shadow: 0 0 12px #ff446633; }
-    .btn-add.expense-mode:hover    { background: var(--red-dim); }
-    .btn-add.investment-mode { border: 2px solid var(--blue);  color: var(--blue);  box-shadow: 0 0 12px #38bdf833; }
-    .btn-add.investment-mode:hover { background: var(--blue-dim); }
+   .btn-add {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  background: transparent;
+}
+.btn-add:hover  { opacity: 0.85; }
+.btn-add:active { transform: scale(0.98); }
+
+.btn-add.income-mode {
+  border: 2px solid var(--green);
+  color: var(--green);
+  box-shadow: 0 0 12px #00ff8833;
+}
+.btn-add.income-mode:hover {
+  background: var(--green-dim);
+}
+
+.btn-add.expense-mode {
+  border: 2px solid var(--red);
+  color: var(--red);
+  box-shadow: 0 0 12px #ff446633;
+}
+.btn-add.expense-mode:hover {
+  background: var(--red-dim);
+}
 
     /* Lista tranzacții */
     .list-header {
