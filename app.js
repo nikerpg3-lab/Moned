@@ -121,7 +121,7 @@ function updateDashboard(transactions) {
   const totalExpense    = expenses.reduce((sum, t) => sum + t.amount, 0);
   const totalInvestment = investments.reduce((sum, t) => sum + t.amount, 0);
   // Investițiile NU scad balanța — sunt banii tăi, doar în altă formă
-  const balance = totalIncome - totalExpense;
+ const balance = totalIncome - totalExpense - totalInvestment;
 
   // Actualizează valorile afișate
   document.getElementById('total-income').textContent     = formatAmount(totalIncome);
