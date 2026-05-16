@@ -14,11 +14,13 @@
   --muted:     #4a6b55;
   --text:      #e0ede4;
   --subtext:   #7aab8a;
-  --green:     #00ff88;   /* verde neon — venituri ies în evidență */
+  --green:     #00ff88;
   --green-dim: #00ff8818;
-  --red:       #ff4466;   /* roșu vibrant — cheltuieli clare */
+  --red:       #ff4466;
   --red-dim:   #ff446618;
   --accent:    #00cc6a;
+  --blue:      #38bdf8;
+  --blue-dim:  #38bdf815;
 }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -228,7 +230,7 @@
     }
 
     /* Buton submit */
-   .btn-add {
+  .btn-add {
   width: 100%;
   padding: 0.75rem;
   border-radius: 10px;
@@ -237,29 +239,17 @@
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   cursor: pointer;
-  transition: opacity 0.15s, transform 0.1s;
+  transition: opacity 0.15s, transform 0.1s, background 0.2s, box-shadow 0.2s;
   background: transparent;
 }
-.btn-add:hover  { opacity: 0.85; }
 .btn-add:active { transform: scale(0.98); }
 
-.btn-add.income-mode {
-  border: 2px solid var(--green);
-  color: var(--green);
-  box-shadow: 0 0 12px #00ff8833;
-}
-.btn-add.income-mode:hover {
-  background: var(--green-dim);
-}
-
-.btn-add.expense-mode {
-  border: 2px solid var(--red);
-  color: var(--red);
-  box-shadow: 0 0 12px #ff446633;
-}
-.btn-add.expense-mode:hover {
-  background: var(--red-dim);
-}
+.btn-add.income-mode         { border: 2px solid var(--green); color: var(--green); box-shadow: 0 0 14px #00ff8840; }
+.btn-add.income-mode:hover   { background: var(--green-dim);   box-shadow: 0 0 20px #00ff8855; }
+.btn-add.expense-mode        { border: 2px solid var(--red);   color: var(--red);   box-shadow: 0 0 14px #ff446640; }
+.btn-add.expense-mode:hover  { background: var(--red-dim);     box-shadow: 0 0 20px #ff446655; }
+.btn-add.investment-mode     { border: 2px solid #38bdf8;      color: #38bdf8;      box-shadow: 0 0 14px #38bdf840; }
+.btn-add.investment-mode:hover { background: #38bdf815;        box-shadow: 0 0 20px #38bdf855; }
 
     /* Lista tranzacții */
     .list-header {
