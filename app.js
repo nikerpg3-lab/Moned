@@ -28,7 +28,7 @@ const CATEGORIES = {
     'ETF Global (VWCE)',
     'Acțiuni individuale',
     'Fond de urgenta',
-    'Fond B, P!',
+    'Fond de festival',
     'Altele (investiție)',
   ],
 };
